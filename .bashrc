@@ -12,7 +12,7 @@ alias ll='ls -a -l'
 alias cl='clear'
 
 # arch
-alias update='sudo pacman -Syyu'
+alias update='sudo pacman -Syu'
 
 PS1='[\u@\h \W]\$ '
 
