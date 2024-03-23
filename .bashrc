@@ -9,7 +9,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -a -l'
-alias cs='clear'
+alias cl='clear'
 
 PS1='[\u@\h \W]\$ '
 
