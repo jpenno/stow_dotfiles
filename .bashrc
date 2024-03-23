@@ -11,5 +11,9 @@ alias grep='grep --color=auto'
 alias ll='ls -a -l'
 alias cl='clear'
 
+# arch
+alias update='sudo pacman -Syyu'
+
 PS1='[\u@\h \W]\$ '
 
+PATH=$PATH:~/.config/emacs/bin
