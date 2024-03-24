@@ -17,3 +17,4 @@ alias update='sudo pacman -Syu'
 PS1='[\u@\h \W]\$ '
 
 PATH=$PATH:~/.config/emacs/bin
+PATH=$PATH:~/.cargo/bin
