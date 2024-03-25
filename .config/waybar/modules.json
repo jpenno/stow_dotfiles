@@ -1,0 +1,95 @@
+    // -------------------------------------------------------------------------
+    // Modules
+    // -------------------------------------------------------------------------
+{
+
+    "clock#time": {
+        "format": "{:%I:%M } ",
+        "format-alt": "{:%a, %b %d %C%y} ",
+        "tooltip": false,
+        "on-click-right": "gsimplecal"
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": "  {usage}% ({load})", // Icon: microchip
+        "states": {
+          "warning": 70,
+          "critical": 90
+        }
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "  {}%", // Icon: memory
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "pulseaudio": {
+        "tooltip": false,
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click-right": "pavucontrol",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+
+   // Workspaces
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "on-scroll-up": "brave",
+        "all-outputs": false,
+        "active-only": false,
+        "format": "{icon}",
+        "format-icons": {
+           //"1": "龜", // Icon: firefox-browser
+           //"2": "", // Icon: mail
+           //"3": "", // Icon: code
+			"urgent": "",
+			"active": "",
+			"default": ""
+        },
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+  // Group apps
+    "group/apps": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/filemanager",
+            "custom/browser",
+            "custom/obsidian",
+         ]
+    },
+
+   // Filemanager Launcher
+    "custom/filemanager": {
+        "format": "",
+        "on-click": "thunar",
+        "tooltip": false
+    },
+
+    // Browser Launcher
+    "custom/browser": {
+        "format": "",
+        "on-click": "brave",
+        "tooltip": false
+    },
+
+    // obsidian launcher
+    "custom/obsidian": {
+        "format": "",
+        "on-click": "obsidian",
+        "tooltip": false
+    },
+}
