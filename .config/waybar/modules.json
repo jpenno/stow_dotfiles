@@ -61,6 +61,13 @@
         "spacing": 10
     },
 
+   // Filemanager Launcher
+    "custom/wlogout": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+
   // Group apps
     "group/apps": {
         "orientation": "horizontal",

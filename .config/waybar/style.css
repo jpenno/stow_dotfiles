@@ -58,7 +58,7 @@
 /* Each module */
 #battery,
 #clock {
-    padding-right: 30px;
+    padding-right: 20px;
     padding-left: 10px;
 }
 #cpu,
@@ -224,4 +224,12 @@
 }
 #custom-media.paused {
     color: green;
+}
+
+#custom-wlogout {
+    color: red;
+    /* background: green; */
+    border-radius: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
