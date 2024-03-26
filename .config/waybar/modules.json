@@ -31,7 +31,7 @@
     "pulseaudio": {
         "tooltip": false,
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
+        "format": "{icon} {volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["", "", ""]
@@ -43,7 +43,6 @@
    // Workspaces
     "hyprland/workspaces" : {
         "on-click": "activate",
-        "on-scroll-up": "brave",
         "all-outputs": false,
         "active-only": false,
         "format": "{icon}",
@@ -51,9 +50,9 @@
            //"1": "龜", // Icon: firefox-browser
            //"2": "", // Icon: mail
            //"3": "", // Icon: code
-			"urgent": "",
-			"active": "",
-			"default": ""
+            "urgent": "",
+            "active": "",
+            "default": ""
         },
     },
 
@@ -91,5 +90,19 @@
         "format": "",
         "on-click": "obsidian",
         "tooltip": false
+    },
+
+    "custom/media": {
+        "format": "{icon}",
+        "interval": 1,
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl -p mpv play-pause",
+        "exec": "~/dotfiles/.config/waybar/scripts/play-pause.sh",
+        "tooltip": false,
+        "format-icons": {
+            "playing": "",
+            "paused": "",
+        },
     },
 }

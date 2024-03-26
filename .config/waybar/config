@@ -25,6 +25,8 @@
     ],
     "modules-center": [
         "group/apps",
+        "custom/media",
+        "custom/media-mpv",
     ],
     "modules-right": [
         "pulseaudio",
