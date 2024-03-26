@@ -25,11 +25,10 @@
     ],
     "modules-center": [
         "group/apps",
-        "custom/media",
-        "custom/media-mpv",
     ],
     "modules-right": [
+        "custom/media",
         "pulseaudio",
-        "clock#time"
+        "clock#time",
     ],
 }

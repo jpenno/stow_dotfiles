@@ -65,6 +65,7 @@
     "group/apps": {
         "orientation": "horizontal",
         "modules": [
+            "custom/wofi",
             "custom/filemanager",
             "custom/browser",
             "custom/obsidian",
@@ -89,6 +90,13 @@
     "custom/obsidian": {
         "format": "",
         "on-click": "obsidian",
+        "tooltip": false
+    },
+
+    // launch wofi
+    "custom/wofi": {
+        "format": "",
+        "on-click": "wofi --show drun",
         "tooltip": false
     },
 

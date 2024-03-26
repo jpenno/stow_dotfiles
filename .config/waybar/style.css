@@ -210,6 +210,15 @@
     padding-right: 15px;
 }
 
+#custom-wofi {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#custom-media {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 #custom-media.playing {
     color: red;
 }
