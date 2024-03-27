@@ -120,4 +120,31 @@
             "paused": "",
         },
     },
+
+    "custom/mouse": {
+        "format": " {}% {icon}",
+        "interval": 60,
+        "return-type": "json",
+        "exec": "~/dotfiles/.config/waybar/scripts/moues_battery.py",
+        "tooltip": false,
+        "format-icons": {
+            "very-low": "",
+            "low": "",
+            "ok": "",
+            "good": "",
+            "na": ""
+        },
+    },
+
+   "custom/updates": {
+       "format": "{} {icon}",
+       "return-type": "json",
+       "format-icons": {
+           "has-updates": "󱍷",
+           "updated": "󰂪"
+       },
+       "exec-if": "which waybar-module-pacman-updates",
+       "exec": "waybar-module-pacman-updates  --interval-seconds 5 --network-interval-seconds 300"
+   }
+
 }

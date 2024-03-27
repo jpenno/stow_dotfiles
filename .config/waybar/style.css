@@ -233,3 +233,28 @@
     padding-right: 15px;
     padding-left: 15px;
 }
+
+#custom-updates.has-updates {
+    color: red;
+}
+
+#custom-updates.updated {
+    color: green;
+}
+
+#custom-mouse{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#custom-mouse.very-low{
+    color: red;
+}
+#custom-mouse.low{
+    color: orange;
+}
+#custom-mouse.ok{
+    color: yellow;
+}
+#custom-mouse.good{
+    color: green;
+}

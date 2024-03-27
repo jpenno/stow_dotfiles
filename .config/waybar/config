@@ -27,6 +27,8 @@
         "group/apps",
     ],
     "modules-right": [
+        "custom/mouse",
+        "custom/updates",
         "custom/media",
         "pulseaudio",
         "clock#time",
