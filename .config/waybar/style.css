@@ -32,6 +32,8 @@
     }
 }
 
+@keyframes nothing {
+}
 
 /* -----------------------------------------------------------------------------
  * Base styles
@@ -246,15 +248,31 @@
     padding-right: 15px;
     padding-left: 15px;
 }
-#custom-mouse.very-low{
+
+#custom-mouse{
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+}
+#custom-mouse.flat{
+    animation-name: blink-critical;
     color: red;
 }
+#custom-mouse.very-low{
+    animation-name: nothing;
+    color: pink;
+}
 #custom-mouse.low{
+    animation-name: nothing;
     color: orange;
 }
 #custom-mouse.ok{
+    animation-name: nothing;
     color: yellow;
 }
 #custom-mouse.good{
+    animation-name: nothing;
     color: green;
 }
+

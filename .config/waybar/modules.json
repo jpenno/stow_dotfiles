@@ -128,6 +128,7 @@
         "exec": "~/dotfiles/.config/waybar/scripts/moues_battery.py",
         "tooltip": false,
         "format-icons": {
+            "flat": "",
             "very-low": "",
             "low": "",
             "ok": "",
