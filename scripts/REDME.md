@@ -3,8 +3,14 @@
 + intel one mono
     + ttf-intel-one-mono
     + awsome
-
 ## Programs
+### hyprland
++ waybar
+  + paru -S waybar-module-pacman-updates-git
++ wlogout
++ mouse
+  + openrazer
+  + paru -S polychromatic
 ### Doom emacs
 + emacs
     + Arch
@@ -21,4 +27,3 @@ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
   + mpv-mpris
 + yt-dlp
 + obsidian
-
