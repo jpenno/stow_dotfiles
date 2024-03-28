@@ -32,7 +32,7 @@ else:
         battery_state = "flat"
     elif battery_level <= 25 and battery_level >= 10:
         battery_state = "very-low"
-    elif battery_level < 50 and battery_levle > 25:
+    elif battery_level < 50 and battery_level > 25:
         battery_state = "low"
     elif battery_level >= 50 and battery_level < 75:
         battery_state = "ok"

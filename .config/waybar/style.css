@@ -7,6 +7,18 @@
  * =========================================================================== */
 
 /* -----------------------------------------------------------------------------
+ * colours
+ * -------------------------------------------------------------------------- */
+@define-color foreground	#a9b1d6;
+@define-color background	#1a1b26;
+@define-color black	#414868;
+@define-color red	#f7768e;
+@define-color green	#73daca;
+@define-color cyan	#7dcfff;
+@define-color white	#c0caf5;
+@define-color yellow	#e0af68;
+@define-color magenta	#bb9af7;
+/* -----------------------------------------------------------------------------
  * Keyframes
  * -------------------------------------------------------------------------- */
 
@@ -23,18 +35,17 @@
 
 @keyframes blink-critical {
     70% {
-      color: white;
+      color: @white;
     }
 
     to {
-        color: white;
-        background-color: red;
+        color: @white;
+        background-color: @red;
     }
 }
 
 @keyframes nothing {
 }
-
 /* -----------------------------------------------------------------------------
  * Base styles
  * -------------------------------------------------------------------------- */
@@ -47,21 +58,35 @@
     margin: 0;
     padding: 0;
 }
-
 /* The whole bar */
 #waybar {
-    background: #323232;
-    color: white;
+    background-color:rgba(65, 72, 104, 0.6);
     font-family: Intell One Mono, Cantarell, Noto Sans, sans-serif;
     font-size: 24px;
-    /* opacity: 0.8; */
+    border-top: solid;
+    border-top-color: #c0caf5;
+    border-top-width: 1;
 }
 
+/* #waybar.hidden { */
+/*     opacity: 0.1; */
+/* } */
 /* Each module */
 #battery,
 #clock {
-    padding-right: 20px;
-    padding-left: 10px;
+    background: @background;
+    color: @foreground;
+    /* opacity: 0.7; */
+    opacity: 1.0;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #cpu,
 #custom-keyboard-layout,
@@ -153,11 +178,23 @@
 
 #pulseaudio {
     /* No styles */
+    background: @background;
+    color: @foreground;
+    opacity: 1.0;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #pulseaudio.muted {
     /* No styles */
-    color: red
+    color: @red;
 }
 
 #custom-spotify {
@@ -174,105 +211,196 @@
 }
 
 #workspaces button {
-    border-top: 2px solid transparent;
+    /* border-top: 2px solid transparent; */
     /* To compensate for the top border and still have vertical centering */
-    padding-bottom: 2px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #888888;
+    /* padding-bottom: 2px; */
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    color: @forground;
     transition: all 0.3s ease-in-out;
     /* opacity: 0.7; */
     border-radius: 15px;
+
+    opacity: 1.0;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 
 #workspaces button.active {
-    border-color: #4c7899;
-    color: greenyellow;
-    background-color: #888888;
+    color: @black;
+    background-color: #c0caf5;
     /* opacity: 0.9; */
     border-radius: 15px;
 }
 
 #workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
+    border-color: @red;
+    color:  @red;
 }
 #custom-filemanager {
-    padding-left: 15px;
+    background: @background;
+    color: #a9b1d6;
+    color: #7dcfff;
+    opacity: 1.0;
+    border-radius: 5px;
     padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #custom-browser {
-    padding-left: 15px;
+    background: @background;
+    color: #e0af68;
+    opacity: 1.0;
+    border-radius: 5px;
     padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #custom-obsidian {
-    padding-left: 15px;
+    background: @background;
+    color: #a9b1d6;
+    color: #7aa2f7;
+    opacity: 1.0;
+    border-radius: 5px;
     padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #custom-wofi {
-    padding-left: 15px;
+    background: @background;
+    color: @green;
+    opacity: 1.0;
+    border-radius: 5px;
     padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #custom-media {
-    padding-left: 15px;
+    background: @background;
+    opacity: 1.0;
+    border-radius: 5px;
     padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #custom-media.playing {
-    color: red;
+    color: @red;
 }
 #custom-media.paused {
-    color: green;
+    color: @green;
 }
 
 #custom-wlogout {
-    color: red;
     /* background: green; */
-    border-radius: 15px;
+    border-radius: 5px;
+    background: @background;
+    color: @red;
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#custom-updates {
+    border-radius: 5px;
+    background: @background;
+    color: @red;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #custom-updates.has-updates {
-    color: red;
+    color: @red;
 }
 
 #custom-updates.updated {
-    color: green;
-}
-
-#custom-mouse{
-    padding-right: 15px;
-    padding-left: 15px;
+    color: @green;
 }
 
 #custom-mouse{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-duration: 2s;
+    border-radius: 5px;
+    background: @background;
+    color: @red;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #custom-mouse.flat{
     animation-name: blink-critical;
-    color: red;
+    color: @red;
+}
+#custom-mouse.na{
+    animation-name: nothing;
+    color: @white;
 }
 #custom-mouse.very-low{
     animation-name: nothing;
-    color: pink;
+    color: @red;
 }
 #custom-mouse.low{
     animation-name: nothing;
-    color: orange;
+    color: @yellow;
 }
 #custom-mouse.ok{
     animation-name: nothing;
-    color: yellow;
+    color: @magenta;
 }
 #custom-mouse.good{
     animation-name: nothing;
-    color: green;
+    color: @green;
 }
-

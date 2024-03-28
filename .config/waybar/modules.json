@@ -47,7 +47,7 @@
         "active-only": false,
         "format": "{icon}",
         "format-icons": {
-           //"1": "龜", // Icon: firefox-browser
+           //"1": "", // Icon: firefox-browser
            //"2": "", // Icon: mail
            //"3": "", // Icon: code
             "urgent": "",
@@ -73,9 +73,9 @@
         "orientation": "horizontal",
         "modules": [
             "custom/wofi",
-            "custom/filemanager",
             "custom/browser",
             "custom/obsidian",
+            "custom/filemanager",
          ]
     },
 
