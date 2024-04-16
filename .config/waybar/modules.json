@@ -5,7 +5,7 @@
 
     "clock#time": {
         "format": "{:%I:%M } 󰥔",
-        "format-alt": "{:%a, %b %d %C%y} ",
+        "format-alt": "{:%d-%m} ",
         "tooltip": false,
         "on-click-right": "gsimplecal"
     },
