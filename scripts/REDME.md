@@ -3,6 +3,7 @@
 + intel one mono
     + ttf-intel-one-mono
     + awsome
+sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 ## Programs
 ### hyprland
 + waybar

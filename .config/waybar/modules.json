@@ -4,7 +4,7 @@
 {
 
     "clock#time": {
-        "format": "{:%I:%M } ",
+        "format": "{:%I:%M } 󰥔",
         "format-alt": "{:%a, %b %d %C%y} ",
         "tooltip": false,
         "on-click-right": "gsimplecal"
@@ -31,10 +31,10 @@
     "pulseaudio": {
         "tooltip": false,
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "format-muted": "",
         "format-icons": {
-            "default": ["", "", ""]
+            "default": ["󱄠", "󱄠", "󱄠"]
         },
         "on-click-right": "pavucontrol",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
@@ -63,7 +63,7 @@
 
    // Filemanager Launcher
     "custom/wlogout": {
-        "format": "",
+        "format": "󰐥",
         "on-click": "wlogout",
         "tooltip": false
     },
@@ -95,7 +95,7 @@
 
     // obsidian launcher
     "custom/obsidian": {
-        "format": "",
+        "format": "",
         "on-click": "obsidian",
         "tooltip": false
     },
@@ -113,7 +113,7 @@
         "return-type": "json",
         "on-click": "playerctl play-pause",
         "on-click-right": "playerctl -p mpv play-pause",
-        "exec": "~/dotfiles/.config/waybar/scripts/play-pause.sh",
+        "exec": "~/.dotfiles/.config/waybar/scripts/play-pause.sh",
         "tooltip": false,
         "format-icons": {
             "playing": "",
