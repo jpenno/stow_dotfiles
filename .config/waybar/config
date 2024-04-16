@@ -11,7 +11,7 @@
     // Global configuration
     // -------------------------------------------------------------------------
     // Load Modules
-    "include": ["~/dotfiles/.config/waybar/modules.json"],
+    "include": ["~/.dotfiles/.config/waybar/modules.json"],
 
     "layer": "top",
 
@@ -28,7 +28,6 @@
     ],
     "modules-right": [
         "custom/mouse",
-        "custom/updates",
         "custom/media",
         "pulseaudio",
         "clock#time",
