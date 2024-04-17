@@ -9,6 +9,12 @@ vim.keymap.set('n', 'K', '5k')
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('i', 'kj', '<Esc>')
 
+-- Buffer ---------------------------------
+-- kill buffer
+vim.keymap.set('n', '<leader>bk', ':bd<CR>', { desc = 'kill focused buffer' })
+vim.keymap.set('n', '<leader>bn', ':bn<CR>', { desc = 'go to the next buffer' })
+vim.keymap.set('n', '<leader>bp', ':bp<CR>', { desc = 'go to the previous buffer' })
+
 -- Keep visual mode indenting
 vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('v', '>', '>gv')
