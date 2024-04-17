@@ -13,6 +13,7 @@ require('lazy').setup({
   require 'plugins.go',
   require 'plugins.oil',
   require 'plugins.neogit',
+  require 'plugins.rainbow-delimiters',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
