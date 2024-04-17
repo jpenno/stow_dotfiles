@@ -6,7 +6,6 @@ require('lazy').setup({
   require 'plugins.lsp',
   require 'plugins.conform',
   require 'plugins.nvim-cmp',
-  require 'plugins.tokyonight',
   require 'plugins.todo-comments',
   require 'plugins.mini',
   require 'plugins.nvim-treesitter',
@@ -14,6 +13,9 @@ require('lazy').setup({
   require 'plugins.oil',
   require 'plugins.neogit',
   require 'plugins.rainbow-delimiters',
+  -- themes
+  -- require 'plugins.tokyonight',
+  require 'plugins.catppuccin',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
