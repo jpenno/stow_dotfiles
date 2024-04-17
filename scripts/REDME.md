@@ -10,7 +10,7 @@ sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
   + paru -S waybar-module-pacman-updates-git
 + wlogout
 + mouse
-  + openrazer
+  + openrazer-daemon 
   + paru -S polychromatic
 ### Doom emacs
 + emacs

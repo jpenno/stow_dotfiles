@@ -9,7 +9,7 @@ export EDITOR='nvim'
 export VISUAL='subl'
 
 # configs
-alias vc='cd ~/.dotfiles/.config/nvim/ && nvim .'
+alias nvc='cd ~/.dotfiles/.config/nvim/ && nvim .'
 alias wbc='cd ~/.dotfiles/.config/waybar/ && nvim .'
 alias hypc='cd ~/.dotfiles/.config/hypr/ && nvim .'
 
