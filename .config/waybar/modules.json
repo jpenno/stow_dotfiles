@@ -76,6 +76,7 @@
             "custom/browser",
             "custom/obsidian",
             "custom/filemanager",
+            "custom/steam",
          ]
     },
 
@@ -90,6 +91,13 @@
     "custom/browser": {
         "format": "",
         "on-click": "brave",
+        "tooltip": false
+    },
+
+    // Browser Launcher
+    "custom/steam": {
+        "format": "",
+        "on-click": "flatpak run com.valvesoftware.Steam",
         "tooltip": false
     },
 

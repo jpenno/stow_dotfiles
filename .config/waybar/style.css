@@ -276,6 +276,21 @@
     margin-bottom: 5px;
 }
 
+#custom-steam {
+    background: @background;
+    color: #c0caf5;
+    opacity: 1.0;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 #custom-obsidian {
     background: @background;
     color: #a9b1d6;
