@@ -33,7 +33,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-one)
-(setq doom-theme 'doom-tokyo-night)
+;; (setq doom-theme 'doom-tokyo-night)
+(setq doom-theme 'catppuccin)
 
 (setq doom-font (font-spec :family "Intel One Mono" :size 28 :weight 'medium))
 ;; This determines the style of line numbers in effect. If set to `nil', line
@@ -81,7 +82,8 @@
 ;;   :demand t
 ;;   :config
 ;;   (obsidian-specify-path "~/Documents/notes")
-;;   (global-obsidian-mode t)
+                                        ;git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+                                        ;   (global-obsidian-mode t)
 ;;   :custom
 ;;   ;; This directory will be used for `obsidian-capture' if set.
 ;;   (obsidian-inbox-directory "Inbox")
