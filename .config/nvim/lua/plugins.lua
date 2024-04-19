@@ -13,6 +13,8 @@ require('lazy').setup({
   require 'plugins.oil',
   require 'plugins.neogit',
   require 'plugins.rainbow-delimiters',
+  require 'plugins.nvim-autopairs',
+  require 'plugins.nvim-colorizer',
   -- themes
   -- require 'plugins.tokyonight',
   require 'plugins.catppuccin',
