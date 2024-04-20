@@ -9,6 +9,10 @@ alias ta='tmux attach'
 # terminal
 alias cl='clear'
 
+# neovim
+alias nf='nvim -c "Telescope oldfiles"'
+alias n='nvim'
+
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
