@@ -15,6 +15,7 @@ require('lazy').setup({
   require 'plugins.rainbow-delimiters',
   require 'plugins.nvim-autopairs',
   require 'plugins.nvim-colorizer',
+  require 'plugins.noice',
   -- themes
   -- require 'plugins.tokyonight',
   require 'plugins.catppuccin',
