@@ -14,11 +14,11 @@ alias nf='nvim -c "Telescope oldfiles"'
 alias n='nvim'
 
 #list
-alias ls='ls --color=auto'
-alias la='ls -a'
-alias ll='ls -alFh'
-alias l='ls'
-alias l.="ls -A | egrep '^\.'"
+alias ls='exa'
+alias la='exa -a'
+alias ll='exa -l'
+alias lla='exa -a -l'
+alias llg='exa -a -l --git'
 
 #youtube download
 # alias yta-aac="yt-dlp --extract-audio --audio-format aac "
@@ -36,4 +36,7 @@ alias update='sudo pacman -Syyu'
 PATH=$PATH:~/.config/emacs/bin
 PATH=$PATH:~/.cargo/bin
 PATH=$PATH:~/.locl/bin
+
 eval "$(zoxide init --cmd cd zsh)"
+
+eval "$(starship init zsh)"
