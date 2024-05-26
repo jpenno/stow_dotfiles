@@ -56,3 +56,6 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 
 -- Oil
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+
+-- Go
+-- vim.keymap.set('n', '<C-r>', ':GoRename<CR>', { desc = 'Open parent directory' })

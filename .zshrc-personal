@@ -5,6 +5,7 @@ alias hypc='cd ~/.dotfiles/.config/hypr/ && nvim .'
 
 # tmux
 alias ta='tmux attach'
+alias t='tmux'
 
 # terminal
 alias cl='clear'
@@ -19,6 +20,13 @@ alias la='exa -a'
 alias ll='exa -l'
 alias lla='exa -a -l'
 alias llg='exa -a -l --git'
+
+# go
+alias gr='go run .'
+alias gt='go test'
+
+# scripts
+alias mb='moues_battery.py'
 
 #youtube download
 # alias yta-aac="yt-dlp --extract-audio --audio-format aac "
@@ -36,6 +44,12 @@ alias update='sudo pacman -Syyu'
 PATH=$PATH:~/.config/emacs/bin
 PATH=$PATH:~/.cargo/bin
 PATH=$PATH:~/.locl/bin
+PATH=$PATH:~/go/bin/
+
+export GTK_IM_MODULE='fctix'
+export QT_IM_MODULE='fctix'
+export SDL_IM_MODULE='fctix'
+export xmodifiers='@im=fctix'
 
 eval "$(zoxide init --cmd cd zsh)"
 
